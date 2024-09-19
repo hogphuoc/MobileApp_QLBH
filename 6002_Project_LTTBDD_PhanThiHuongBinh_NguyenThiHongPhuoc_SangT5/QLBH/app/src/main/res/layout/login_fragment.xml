@@ -1,0 +1,79 @@
+<!-- fragment_login.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="381dp"
+        android:layout_height="271dp"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Tên đăng nhập"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:padding="20dp"
+            android:singleLine="false"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Mật khẩu">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColorLink="#283593"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxShowPassword"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:text="Hiện mật khẩu" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="378dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#000000"
+        android:text="Đăng nhập"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/buttonForgotPassword"
+        android:layout_width="375dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#000000"
+        android:text="Quên mật khẩu?"
+        android:textSize="24sp"
+        app:cornerRadius="10dp"
+        app:iconPadding="8dp" />
+
+</LinearLayout>

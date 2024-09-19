@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ThongKeFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="429dp"
+        android:layout_height="265dp"
+        android:paddingBottom="20dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/buttondoanhthu"
+        android:layout_width="319dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:text="Thống kê doanh thu"
+        android:textSize="24sp"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/buttonslton"
+        android:layout_width="317dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@android:drawable/ic_dialog_dialer"
+        android:text="Thống kê lượng tồn"
+        android:textSize="24sp"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/buttonkhachhang"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@android:drawable/ic_dialog_info"
+        android:text="Thống kê lượng khách hàng"
+        android:textSize="24sp"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="164dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#000000"
+        android:drawableLeft="@android:drawable/ic_delete"
+        android:text="Thoát"
+        android:textSize="24sp"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

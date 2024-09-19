@@ -1,0 +1,61 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+        <TextView
+            android:id="@+id/maHDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MaHD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/maKHTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="16sp"
+            android:text="MaKH"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/maNVTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MaNV"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ngayXuatHDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NgayXuatHD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ptTTTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PTTT"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/xemChiTietButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+
+            android:text="Xem Chi Tiết"
+            app:cornerRadius="10dp" />
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

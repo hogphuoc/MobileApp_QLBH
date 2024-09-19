@@ -1,0 +1,55 @@
+<!-- res/layout/fragment_home_page.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context=".HomePageFragment">
+
+
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:layout_width="428dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:text="Xin chào, Quản lý!"
+        android:textAlignment="center"
+        android:textColor="@color/card_background"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayoutmenu"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:isScrollContainer="false"
+        app:tabIndicatorColor="#000000"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tài khoản" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+
+</LinearLayout>

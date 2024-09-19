@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="CHI TIẾT THÔNG TIN HOÁ ĐƠN"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:enabled="false"
+        android:hint="MaHD">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/maHDInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MaKH">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/maKHInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MaNV">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/maNVInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NgayXuatHD">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ngayXuatHDInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PTTT">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ptTTInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SoLuongMua">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/soLuongMuaInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DonGiaBan">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/donGiaBanInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ThanhTien">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/thanhTienInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btnLuuHD"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:text="Xoá" />
+    </LinearLayout>
+
+</LinearLayout>

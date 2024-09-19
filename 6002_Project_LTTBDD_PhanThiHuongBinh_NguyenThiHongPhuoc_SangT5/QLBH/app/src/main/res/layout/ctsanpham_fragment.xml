@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"
+        android:text="CHI TIẾT THÔNG TIN SẢN PHẨM"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã Sản Phẩm" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên Sản Phẩm" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGiaBanSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá Bán" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDVT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đơn Vị Tính" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageViewctsp"
+        android:layout_width="287dp"
+        android:layout_height="149dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMoTaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô Tả" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMaLoaiSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã Loại" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdateSP"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#000000"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/btnDeleteSP"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#000000"
+            android:text="Xóa" />
+    </LinearLayout>
+</LinearLayout>

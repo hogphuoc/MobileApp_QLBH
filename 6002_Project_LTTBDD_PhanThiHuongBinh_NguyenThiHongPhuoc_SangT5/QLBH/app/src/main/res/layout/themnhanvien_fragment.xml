@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CTNhanVienFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="THÊM THÔNG TIN NHÂN VIÊN MỚI"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="ExtraText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã nhân viên"
+        android:padding="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMaNV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ Tên"
+        android:padding="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHoTenNV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:gravity="clip_vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="Giới Tính:"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rgGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbNam"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/rbNu"
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:text="Nữ" />
+        </RadioGroup>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày sinh:"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Địa Chỉ"
+        android:padding="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDiaChiNV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số Điện Thoại"
+        android:padding="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSDTNV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Bộ Phận"
+        android:padding="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMaBP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã Cửa Hàng"
+        android:padding="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMaCH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLuu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Lưu"
+            android:textColor="@android:color/white"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

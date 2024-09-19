@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp"
+    tools:context=".QuenMatKhauFragment">
+
+    <!-- TextInputLayout with EditText -->
+
+    <!-- Save Password Button -->
+
+    <TableRow
+        android:layout_width="333dp"
+        android:layout_height="60dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:text="VUI LÒNG NHẬP MẬT KHẨU MỚI"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="318dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập mật khẩu mới">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:password="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="301dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSavePassword"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:text="Lưu mật khẩu"
+            app:cornerRadius="10dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnexit"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:text="Thoát"
+            app:cornerRadius="10dp" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"
+        android:text="THÊM SẢN PHẨM MỚI"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã Sản Phẩm" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên Sản Phẩm" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGiaBanSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá Bán" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDVT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Đơn Vị Tính" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="377dp"
+        android:layout_height="141dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#000000"
+        android:text="Chọn Hình Ảnh"
+        app:cornerRadius="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMoTaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mô Tả" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Mã Loại SP:"
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:paddingBottom="1dp">
+
+            <Spinner
+                android:id="@+id/spinnerMaLoaiSP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mã Loại" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLuuSP"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#000000"
+        android:text="Lưu"
+        app:cornerRadius="10dp" />
+</LinearLayout>

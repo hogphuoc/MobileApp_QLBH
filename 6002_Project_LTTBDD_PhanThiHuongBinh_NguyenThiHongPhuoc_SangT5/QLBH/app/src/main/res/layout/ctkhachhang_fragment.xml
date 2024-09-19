@@ -1,0 +1,132 @@
+<!-- res/layout/activity_customer_details.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CTKhachHangFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:text="CHI TIẾT THÔNG TIN KHÁCH HÀNG"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:enabled="false"
+        android:hint="Mã khách hàng:"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMaKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ tên khách hàng:"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHoTenKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giới tính:"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etGioiTinhKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Địa chỉ:"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDiaChiKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày sinh:"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại:"
+        android:padding="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSDTKH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnUpdateKH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Sửa"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteKH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="Xóa"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

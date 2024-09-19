@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnBackSP"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Nhập mã sản phẩm"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <ImageButton
+            android:id="@+id/btnAddSP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <ImageButton
+            android:id="@+id/btnBackSanPham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="676dp"
+        android:paddingTop="10dp" />
+
+</LinearLayout>

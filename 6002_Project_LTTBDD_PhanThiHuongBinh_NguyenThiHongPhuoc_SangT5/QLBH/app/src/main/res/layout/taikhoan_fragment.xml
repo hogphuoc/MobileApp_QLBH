@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".TaiKhoanFragment">
+
+    <!-- Tiêu đề -->
+
+    <!-- Nút Đổi mật khẩu -->
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:padding="12dp"
+
+        android:text="Đổi mật khẩu"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:icon="@android:drawable/ic_lock_idle_lock"
+        app:iconPadding="8dp"
+        app:iconTint="#817F7F" />
+
+    <!-- Nút Đăng xuất -->
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonChangePassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+
+        android:padding="12dp"
+        android:text="Đăng xuất"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:icon="@android:drawable/ic_menu_set_as"
+        app:iconTint="#FFFFFF" />
+
+    <!-- Container để chứa Fragment -->
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:layout_below="@id/buttonLogout"
+        android:layout_marginTop="-134dp" />
+</RelativeLayout>
